@@ -6,7 +6,15 @@ dumps a backup to csv file
 WARNING: Run from console via 
 	#php -f convert.php
 2020 by Yves Jeanrenaud
+https://github.com/yjeanrenaud/yj_AALB2AAWP
 */
+if(defined('STDIN') ) {
+	echo("Running from CLI, all fine");
+}
+else {
+	echo("Not Running from CLI\This script is solely for you to use via command line, not via browser!");
+	die;
+}
 //FILL IN YOURS
 $sql_username ="";
 $sql_password ="";
